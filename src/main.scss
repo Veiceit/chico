@@ -1,0 +1,869 @@
+//@font-face {
+//  font-family: TradeGothicLTStd-BdCn20;
+//  src: url(fonts/TradeGothicLTStd-BdCn20.eot?#iefix) format("embedded-opentype"), url(fonts/TradeGothicLTStd-BdCn20.otf) format("opentype"), url(fonts/TradeGothicLTStd-BdCn20.woff) format("woff"), url(fonts/TradeGothicLTStd-BdCn20.ttf) format("truetype"), url(fonts/TradeGothicLTStd-BdCn20.svg#TradeGothicLTStd-BdCn20) format("svg");
+//  font-weight: 400;
+//  font-style: normal
+//}
+//
+//@font-face {
+//  font-family: Sanchez;
+//  src: url(fonts/Sanchez.eot?#iefix) format("embedded-opentype"), url(fonts/Sanchez.otf) format("opentype"), url(fonts/Sanchez.woff) format("woff"), url(fonts/Sanchez.ttf) format("truetype"), url(fonts/Sanchez.svg#Sanchez) format("svg");
+//  font-weight: 400;
+//  font-style: normal
+//}
+//
+//@font-face {
+//  font-family: SignPainter-HouseScript;
+//  src: url(fonts/SignPainter-HouseScript.eot?#iefix) format("embedded-opentype"), url(fonts/SignPainter-HouseScript.woff) format("woff"), url(fonts/SignPainter-HouseScript.ttf) format("truetype"), url(fonts/SignPainter-HouseScript.svg#SignPainter-HouseScript) format("svg");
+//  font-weight: 400;
+//  font-style: normal
+//}
+//
+//*, :after, :before {
+//  box-sizing: border-box
+//}
+//
+//body {
+//  font-family: Arial, Helvetica, sans-serif;
+//  color: #333;
+//  background-color: #fff;
+//  margin: 0;
+//  padding: 0
+//}
+//
+//header {
+//  color: #fff;
+//  overflow: auto;
+//  background-color: #484848
+//}
+//
+//header .bannerTitleWrapper {
+//  background: url(images/skyline.jpeg) no-repeat 50%;
+//  background-size: cover;
+//  clear: both;
+//  min-height: 500px;
+//  text-align: center;
+//  padding-top: 100px;
+//  position: relative
+//}
+//
+//header h1 {
+//  display: inline-block;
+//  padding: 20px;
+//  float: left;
+//  background-color: #5ea89e;
+//  font-size: 68px
+//}
+//
+//header h1, header h1 a {
+//  margin: 0;
+//  font-family: SignPainter-HouseScript, sans-serif
+//}
+//
+//header h1 a {
+//  padding: 0;
+//  outline: none
+//}
+//
+//header h1 a, header h1 a:hover {
+//  color: #fff;
+//  text-decoration: none
+//}
+//
+//header .nav {
+//  float: right;
+//  padding: 25px
+//}
+//
+//header h2 {
+//  font-size: 60px
+//}
+//
+//header h2, header p {
+//  font-family: TradeGothicLTStd-BdCn20;
+//  text-transform: uppercase
+//}
+//
+//header p {
+//  font-size: 26px;
+//  max-width: 60%;
+//  margin: 0 auto
+//}
+//
+//header a {
+//  display: inline-block;
+//  margin: 10px;
+//  padding: 10px;
+//  border-radius: 3px;
+//  font-family: Sanchez;
+//  color: #fff;
+//  text-decoration: none;
+//  outline: none
+//}
+//
+//header a.active, header a:hover {
+//  background-color: #5ea89e;
+//  color: #fff;
+//  text-decoration: none
+//}
+//
+//header .contactBtn, header .createAccountBtn {
+//  background-color: #5ea89e
+//}
+//
+//header .contactBtn {
+//  position: absolute;
+//  bottom: 30px;
+//  right: 15px
+//}
+//
+//section {
+/// / padding: 20 px;
+//  clear: both
+//}
+//
+//.colThree {
+//  min-height: 300px;
+//  background-color: #5ea89e;
+//  text-align: center;
+//  color: #fff;
+//  font-size: 48px;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//}
+//
+//.colThree:nth-child(2) {
+//  background-color: #ff4500
+//}
+//
+//.colThree:nth-child(3) {
+//  background-color: #228b22
+//}
+//
+//.grid-item, .grid-sizer {
+//  width: 20%
+//}
+//
+//.grid-item--width2 {
+//  width: 40%
+//}
+//
+///* ======================================================== */
+//
+//#musicGallery .container {
+//  background: #fff;
+//  margin-bottom: 16px;
+//  width: 100%;
+//  padding: 0 0 16px;
+//}
+//
+//#musicGallery .masonry {
+//  margin: 0 auto;
+//}
+//
+//#musicGallery .card {
+//  background-position: center;
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//  /*width: 640px;*/
+//  /*width: 33.3333%;*/
+//  box-shadow: rgba(0, 0, 0, 0.14902) 0px 2px 4px;
+//  display: flex;
+//  flex-wrap: wrap;
+//  position: relative;
+//  /*justify-content: center;*/
+//  /*align-items: center;*/
+//}
+//
+//#musicGallery .card > h4 {
+//  font-size: 3em;
+//  color: #fff;
+//  /*margin: 1em 0;*/
+//  width: 100%;
+//  margin: 0 auto;
+//  text-align: center;
+//  font-family: SignPainter-HouseScript, sans-serif;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  padding-bottom: 50px;
+//}
+//#musicGallery .card > .trackTime {
+//  display: block;
+//  font-size: 1em;
+//  color: #fff;
+//  /*margin: 1em 0;*/
+//  width: 100%;
+//  margin: 0 auto;
+//  text-align: center;
+//  max-height: 30px;
+//  position: absolute;
+//  bottom: 120px;
+//}
+//
+///*#musicGallery a {*/
+///*position: absolute;*/
+///*top: 8px;*/
+///*right: 8px;*/
+///*}*/
+//
+//#musicGallery .icon {
+//  width: 32px;
+//  height: 32px;
+//}
+//#musicGallery .jp-poster-wrapper {
+//  width: 40px;
+//  height: 40px;
+//  display: inline-block;
+//}
+//#musicGallery .jp-poster-wrapper img {
+//  width: 100%;
+//  height: auto;
+//}
+//
+///*====================== Player style ======================*/
+//#pl {
+//  position: absolute;
+//  bottom: 0;
+//}
+//
+//
+//
+//
+//
+//.jp-jplayer {
+//  -webkit-user-select: none;
+//  -moz-user-select: none;
+//  -ms-user-select: none;
+//  user-select: none;
+//}
+//@media (max-width: 630px) {
+//  .jp-jplayer .jp-state-full-screen .jp-poster {
+//    height: auto;
+//  }
+//}
+//.jp-hidden {
+//  display: none;
+//}
+//.jp-state-no-volume-support .jp-mute,
+//.jp-state-no-volume-support .jp-volume-bar,
+//.jp-state-no-volume-support .jp-volume-bar-value {
+//  display: none;
+//}
+//.jp-jplayer.jp-state-full-screen {
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  width: 100%;
+//  height: 100%;
+//  background-color: black;
+//  visibility: visible;
+//  position: fixed;
+//}
+//.jp-jplayer.jp-state-full-screen .jp-gui {
+//  position: absolute;
+//  bottom: 0;
+//  width: 100%;
+//}
+//.jp-jplayer.jp-state-full-screen .jp-gui .jp-poster {
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  max-width: 100%;
+//  z-index: -1;
+//  margin: 0 auto;
+//  position: fixed;
+//  display: inline-block;
+//}
+//.jp-state-audio.jp-jplayer.jp-state-full-screen .jp-media,
+//.jp-state-video.jp-jplayer.jp-state-full-screen .jp-media {
+//  top: 50%;
+//  -webkit-transform: translateY(-50%);
+//  -moz-transform: translateY(-50%);
+//  -ms-transform: translateY(-50%);
+//  transform: translateY(-50%);
+//  width: 100%;
+//}
+//.jp-state-audio.jp-jplayer.jp-state-full-screen .jp-media video,
+//.jp-state-video.jp-jplayer.jp-state-full-screen .jp-media video {
+//  width: 100%;
+//}
+//@media (max-width: 400px) {
+//  .jp-sleek.jp-jplayer.jp-state-no-volume-support .jp-gui .jp-controls .jp-repeat {
+//    display: none;
+//  }
+//}
+//@media (max-width: 480px) {
+//  .jp-sleek.jp-jplayer.jp-state-no-volume-support .jp-gui .jp-controls .jp-download {
+//    display: none;
+//  }
+//}
+//@media (max-width: 700px) {
+//  .jp-sleek.jp-jplayer.jp-state-no-volume-support .jp-gui .jp-controls .jp-title {
+//    display: none;
+//  }
+//}
+//@media (max-width: 530px) {
+//  .jp-sleek.jp-jplayer.jp-state-no-volume-support:not(.jp-state-full-screen) .jp-gui .jp-controls .jp-poster {
+//    display: none;
+//  }
+//}
+//@media (max-width: 354px) {
+//  .jp-sleek.jp-state-video:not(.jp-state-no-volume-support) .jp-gui .jp-controls .jp-volume-container {
+//    display: none;
+//  }
+//}
+//@media (max-width: 450px) {
+//  .jp-sleek.jp-state-video:not(.jp-state-no-volume-support) .jp-gui .jp-controls .jp-repeat {
+//    display: none;
+//  }
+//}
+//@media (max-width: 530px) {
+//  .jp-sleek.jp-state-video:not(.jp-state-no-volume-support) .jp-gui .jp-controls .jp-download {
+//    display: none;
+//  }
+//}
+//@media (max-width: 700px) {
+//  .jp-sleek.jp-state-video:not(.jp-state-no-volume-support) .jp-gui .jp-controls .jp-title {
+//    display: none;
+//  }
+//}
+//@media (max-width: 530px) {
+//  .jp-sleek.jp-state-video:not(.jp-state-no-volume-support):not(.jp-state-full-screen) .jp-gui .jp-controls .jp-poster {
+//    display: none;
+//  }
+//}
+//@media (max-width: 400px) {
+//  .jp-sleek.jp-jplayer.jp-state-audio:not(.jp-state-no-volume-support) .jp-gui .jp-controls .jp-full-screen {
+//    display: none;
+//  }
+//}
+//@media (max-width: 450px) {
+//  .jp-sleek.jp-jplayer.jp-state-audio:not(.jp-state-no-volume-support) .jp-gui .jp-controls .jp-repeat {
+//    display: none;
+//  }
+//}
+//@media (max-width: 530px) {
+//  .jp-sleek.jp-jplayer.jp-state-audio:not(.jp-state-no-volume-support) .jp-gui .jp-controls .jp-download {
+//    display: none;
+//  }
+//}
+//@media (max-width: 750px) {
+//  .jp-sleek.jp-jplayer.jp-state-audio:not(.jp-state-no-volume-support) .jp-gui .jp-controls .jp-title {
+//    display: none;
+//  }
+//}
+//@media (max-width: 580px) {
+//  .jp-sleek.jp-jplayer.jp-state-audio:not(.jp-state-no-volume-support):not(.jp-state-full-screen) .jp-gui .jp-controls .jp-poster {
+//    display: none;
+//  }
+//}
+//.jp-sleek {
+//  font-family: "Source Sans Pro", sans-serif;
+//}
+//.jp-state-video:not(.jp-state-idle).jp-sleek .jp-poster,
+//.jp-state-video.jp-state-playing.jp-sleek .jp-poster {
+//  display: none;
+//}
+//.jp-state-video.jp-sleek .jp-media {
+//  position: relative;
+//}
+//.jp-state-video.jp-sleek .jp-media .jp-poster {
+//  max-height: 100%;
+//  max-width: 100%;
+//}
+//.jp-state-video.jp-sleek .jp-media {
+//  overflow: hidden;
+//  display: table;
+//  margin: 0 auto;
+//}
+//.jp-state-video.jp-sleek .jp-media video {
+//  display: block;
+//}
+//.jp-state-video.jp-sleek .jp-media .jp-poster {
+//  position: absolute;
+//  top: 50%;
+//  left: 50%;
+//  -webkit-transform: translate(-50%, -50%);
+//  -moz-transform: translate(-50%, -50%);
+//  -ms-transform: translate(-50%, -50%);
+//  transform: translate(-50%, -50%);
+//}
+//.jp-sleek .jp-gui {
+//  position: fixed;
+//  bottom: 0;
+//  width: 100%;
+//  height: 42px;
+//  background-color: #e5e5e5;
+//}
+//:not(.jp-state-full-screen).jp-sleek .jp-gui {
+//  z-index: 100;
+//}
+//.jp-state-no-browser-support.jp-sleek .jp-gui {
+//  height: auto;
+//}
+//.jp-state-no-browser-support.jp-sleek .jp-gui .jp-controls {
+//  display: none;
+//}
+//.jp-sleek .jp-gui .jp-no-browser-support {
+//  display: inline-block;
+//  margin-left: 10px;
+//  font-size: 14px;
+//  padding: 4px;
+//}
+//.jp-sleek .jp-gui .jp-no-browser-support h4 {
+//  font-weight: bold;
+//  font-size: 16px;
+//  margin-top: 5px;
+//  margin-bottom: 6px;
+//}
+//.jp-sleek .jp-gui .jp-controls {
+//  height: inherit;
+//  position: relative;
+//  font-size: 24px;
+//  white-space: nowrap;
+//  display: table;
+//  border-spacing: 5px 0;
+//  margin: 0 auto;
+//}
+//.jp-sleek .jp-gui .jp-controls button {
+//  font-size: inherit;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-title-container {
+//  font-size: 12px;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-title-container .jp-title {
+//  font-weight: bold;
+//  max-width: 230px;
+//  min-width: 230px;
+//  text-overflow: ellipsis;
+//  overflow: hidden;
+//  display: inline-block;
+//  vertical-align: middle;
+//}
+//.jp-state-audio.jp-sleek .jp-gui .jp-controls .jp-title-container .jp-title {
+//  margin-left: 10px;
+//}
+//.jp-state-audio.jp-sleek .jp-gui .jp-controls .jp-title-container .jp-poster {
+//  max-height: 100%;
+//  height: 100%;
+//  padding: 5px;
+//}
+//.jp-sleek .jp-gui .jp-controls > * {
+//  vertical-align: middle;
+//  height: inherit;
+//  display: table-cell;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-repeat {
+//  margin-left: 12px;
+//  margin-right: 12px;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-progress {
+//  /*background-color: #a1c1f4;*/
+//  width: 500px;
+//  min-width: 180px;
+//  max-width: 500px;
+//  font-size: 20px;
+//  position: relative;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-progress .jp-current-time,
+//.jp-sleek .jp-gui .jp-controls .jp-progress .jp-duration {
+//  padding: 0 12px;
+//  top: 50%;
+//  position: relative;
+//  display: inline-block;
+//  -webkit-transform: translateY(-50%);
+//  -moz-transform: translateY(-50%);
+//  -ms-transform: translateY(-50%);
+//  transform: translateY(-50%);
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-progress .jp-duration {
+//  right: 0;
+//  position: absolute;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar {
+//  cursor: pointer;
+//  height: 100%;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar .jp-play-bar {
+//  background-color: #71a6fc;
+//  height: 100%;
+//  position: absolute;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar .jp-buffer-bar {
+//  height: 100%;
+//  width: 100%;
+//  position: absolute;
+//  display: block;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-volume-container {
+//  min-width: 42px;
+//  position: relative;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-volume-container:hover .jp-volume-slider .jp-volume-bar-container {
+//  height: 100px;
+//  -webkit-transition-duration: 0.3s;
+//  -moz-transition-duration: 0.3s;
+//  transition-duration: 0.3s;
+//  outline: solid 1px #cfcfcf;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-volume-container:hover .jp-volume-slider .jp-volume-bar-container .jp-volume-bar {
+//  display: block;
+//  bottom: 10%;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-volume-container .jp-mute {
+//  height: inherit;
+//}
+//.jp-state-no-volume-support.jp-sleek .jp-gui .jp-controls .jp-volume-container {
+//  display: none;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-volume-container .jp-volume-slider {
+//  position: absolute;
+//  top: 0;
+//  height: 100%;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-volume-container .jp-volume-slider .jp-volume-bar-container {
+//  background-color: #e5e5e5;
+//  position: absolute;
+//  height: 0;
+//  width: 24px;
+//  left: 8px;
+//  bottom: 100%;
+//  -webkit-transition-duration: 0.3s;
+//  -moz-transition-duration: 0.3s;
+//  transition-duration: 0.3s;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-volume-container .jp-volume-slider .jp-volume-bar-container .jp-volume-bar {
+//  background-color: #a1c1f4;
+//  cursor: pointer;
+//  border-radius: 1px;
+//  display: none;
+//  -webkit-transform: translateX(-50%) rotate(180deg);
+//  -moz-transform: translateX(-50%) rotate(180deg);
+//  -ms-transform: translateX(-50%) rotate(180deg);
+//  transform: translateX(-50%) rotate(180deg);
+//  width: 8px;
+//  height: 80px;
+//  position: absolute;
+//  bottom: 100%;
+//  left: 50%;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-volume-container .jp-volume-slider .jp-volume-bar-container .jp-volume-bar .jp-volume-bar-value {
+//  background-color: #71a6fc;
+//  border-radius: inherit;
+//}
+//.jp-icon-controls button:focus {
+//  outline: none;
+//}
+//.jp-icon-controls button {
+//  border: none;
+//  background-color: transparent;
+//}
+//.jp-icon-controls .jp-download,
+//.jp-icon-controls .jp-play,
+//.jp-icon-controls .jp-repeat,
+//.jp-icon-controls .jp-full-screen,
+//.jp-icon-controls .jp-mute {
+//  min-width: 42px;
+//  color: #000;
+//  padding: 0;
+//}
+//.jp-icon-controls a {
+//  cursor: pointer;
+//  text-decoration: none;
+//  color: #000;
+//  text-align: center;
+//  min-width: 42px;
+//}
+//.jp-jplayer .jp-icon-controls .jp-play i:before {
+//  content: "\F04B";
+//  color: #ffffff;
+//  background-color: #5ea89e;
+//  border-radius: 50%;
+//  width: 40px;
+//  height: 40px;
+//  display: block;
+//  font-size: 20px;
+//  padding: 10px 14px;
+//}
+//.jp-jplayer.jp-state-playing .jp-icon-controls .jp-play i:before {
+//  content: "\F04C";
+//  color: #ffffff;
+//  background-color: #5ea89e;
+//  border-radius: 50%;
+//  width: 40px;
+//  height: 40px;
+//  display: block;
+//  font-size: 20px;
+//  padding: 10px 10px;
+//}
+//.jp-jplayer.jp-state-muted .jp-icon-controls .jp-mute i:before {
+//  content: "\F026";
+//}
+//.jp-jplayer.jp-state-volume-low .jp-icon-controls .jp-mute i:before {
+//  content: "\F027";
+//}
+//.jp-jplayer.jp-state-volume-high .jp-icon-controls .jp-mute i:before {
+//  content: "\F028";
+//}
+//.singlePlayer {
+//  position: absolute;
+//  bottom: 0;
+//  width: 100%;
+//  height: 100px;
+//}
+//.singlePlayer .jp-sleek .jp-gui .jp-controls {
+//  height: inherit;
+//  position: relative;
+//  font-size: 14px;
+//  white-space: nowrap;
+//  display: flex;
+//  flex-wrap: wrap;
+//  border-spacing: 5px 0;
+//  margin: 0 auto;
+//}
+//.singlePlayer .jp-sleek .jp-gui .jp-controls .jp-progress {
+//  width: 80%;
+//  font-size: 14px;
+//}
+//.singlePlayer .jp-icon-controls .jp-play {
+//  width: 20%;
+//}
+//.singlePlayer .jp-sleek .jp-gui .jp-controls .mainControls,
+//.singlePlayer .jp-sleek .jp-gui .jp-controls .serviceBtn {
+//  width: 100%;
+//  display: flex;
+//  background-color: #ffffff;
+//}
+//.singlePlayer .jp-sleek .jp-gui .jp-controls .serviceBtn {
+//  padding: 10px;
+//}
+//.singlePlayer .jp-sleek .jp-gui {
+//  height: 50px;
+//}
+//#musicGallery .singlePlayer .jp-download {
+//  position: absolute;
+//  top: auto;
+//  left: 8px;
+//  width: 90px;
+//  border: 1px solid #cfcfcf;
+//  border-radius: 2px;
+//  color: #5ea89e;
+//}
+//.singlePlayer .jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar .jp-buffer-bar {
+//  left: 15%;
+//  right: 15%;
+//  width: 70%;
+//  max-width: 70%;
+//}
+//.singlePlayer .jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar .jp-play-bar {
+//  max-width: 70%;
+//  margin: 0 auto;
+//  left: 15%;
+//  height: 2px;
+//  top: 25px;
+//  background-color: #5ea89e;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-volume-container {
+//  position: absolute;
+//  top: auto;
+//  right: 8px;
+//}
+//.jp-sleek .jp-gui .jp-controls .jp-progress .jp-current-time {
+//  color: #5ea89e;
+//}
+//.singlePlayer .jp-icon-controls .jp-mute {
+//  min-width: 42px;
+//  color: #5ea89e;
+//  padding: 0;
+//}
+//.singlePlayer .jp-sleek .jp-gui .jp-controls .jp-volume-container .jp-volume-slider .jp-volume-bar-container {
+//  background-color: #ffffff;
+//  outline: solid 1px #ffffff;
+//}
+//.singlePlayer .jp-sleek .jp-gui .jp-controls .jp-volume-container .jp-volume-slider .jp-volume-bar-container .jp-volume-bar .jp-volume-bar-value {
+//  background-color: #5ea89e;
+//}
+//.singlePlayer .jp-sleek .jp-gui .jp-controls .jp-volume-container .jp-volume-slider .jp-volume-bar-container .jp-volume-bar {
+//  background-color: #7dd6ca;
+//}
+//input[type=range]{
+//  -webkit-appearance: none;
+//}
+//
+//input[type=range]::-webkit-slider-runnable-track {
+//  width: 300px;
+//  margin: 5px;
+//  height: 2px;
+//  background: #5ea89e;
+//  border: none;
+//  border-radius: 3px;
+//}
+//
+//input[type=range]::-webkit-slider-thumb {
+//  -webkit-appearance: none;
+//  border: none;
+//  height: 5px;
+//  width: 5px;
+//  border-radius: 50%;
+//  background: #5ea89e;
+//  margin-top: -1.5px;
+//}
+//
+//input[type=range]:focus {
+//  outline: none;
+//}
+//
+//input[type=range]:focus::-webkit-slider-runnable-track {
+//  background: #5ea89e;
+//}
+//.media-controls .media-control--play-pause {
+//  border-radius: 50%;
+//  border: none;
+//  background: #5ea89e;
+//  color: #ffffff;
+//  width: 40px;
+//  height: 40px;
+//  outline: none;
+//}
+//.media-controls {
+//  display: flex;
+//  align-items: center;
+//  padding: 12px;
+//  background-color: #ffffff;
+//  color: #5ea89e;
+//  flex-direction: column;
+//}
+//.playerWrapp {
+//  width: 100%;
+//  height: 100px;
+//  background-color: #ffffff;
+//  position: absolute;
+//  bottom: 0;
+//}
+//.media-controls time {
+//  padding: 10px 15px;
+//}
+//.controlBtn {
+//  width: 100%;
+//  display: flex;
+//}
+//.serviceBtn {
+//  width: 100%;
+//  display: flex;
+//  padding: 10px 0;
+//  justify-content: center;
+//}
+//#musicGallery .serviceBtn a {
+//  position: relative;
+//  color: #5ea89e;
+//  border: 1px solid lightgrey;
+//  border-radius: 3px;
+//  padding: 2px 10px;
+//  text-decoration: none;
+//  outline: none;
+//  top: auto;
+//  right: auto;
+//}
+///*=================== Player style end =========================*/
+//
+//#musicGallery .sk-folding-cube {
+//  margin: 20px auto;
+//  margin-top: 40px;
+//  width: 20px;
+//  height: 20px;
+//  position: relative;
+//  -webkit-transform: rotateZ(45deg);
+//  transform: rotateZ(45deg);
+//}
+//
+//#musicGallery .sk-folding-cube .sk-cube {
+//  float: left;
+//  width: 50%;
+//  height: 50%;
+//  position: relative;
+//  -webkit-transform: scale(1.1);
+//  -ms-transform: scale(1.1);
+//  transform: scale(1.1);
+//}
+//
+//#musicGallery .sk-folding-cube .sk-cube:before {
+//  content: '';
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  background-color: rgb(0, 188, 212);
+//  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+//  animation: sk-foldCubeAngle 2.4s infinite linear both;
+//  -webkit-transform-origin: 100% 100%;
+//  -ms-transform-origin: 100% 100%;
+//  transform-origin: 100% 100%;
+//}
+//
+//#musicGallery .sk-folding-cube .sk-cube2 {
+//  -webkit-transform: scale(1.1) rotateZ(90deg);
+//  transform: scale(1.1) rotateZ(90deg);
+//}
+//
+//#musicGallery .sk-folding-cube .sk-cube3 {
+//  -webkit-transform: scale(1.1) rotateZ(180deg);
+//  transform: scale(1.1) rotateZ(180deg);
+//}
+//
+//#musicGallery .sk-folding-cube .sk-cube4 {
+//  -webkit-transform: scale(1.1) rotateZ(270deg);
+//  transform: scale(1.1) rotateZ(270deg);
+//}
+//
+//#musicGallery .sk-folding-cube .sk-cube2:before {
+//  -webkit-animation-delay: 0.3s;
+//  animation-delay: 0.3s;
+//}
+//
+//#musicGallery .sk-folding-cube .sk-cube3:before {
+//  -webkit-animation-delay: 0.6s;
+//  animation-delay: 0.6s;
+//}
+//
+//#musicGallery .sk-folding-cube .sk-cube4:before {
+//  -webkit-animation-delay: 0.9s;
+//  animation-delay: 0.9s;
+//}
+//
+//
+//@-webkit-keyframes sk-foldCubeAngle {
+//  0%, 10% {
+//    -webkit-transform: perspective(140px) rotateX(-180deg);
+//    transform: perspective(140px) rotateX(-180deg);
+//    opacity: 0;
+//  } 25%, 75% {
+//      -webkit-transform: perspective(140px) rotateX(0deg);
+//      transform: perspective(140px) rotateX(0deg);
+//      opacity: 1;
+//    } 90%, 100% {
+//        -webkit-transform: perspective(140px) rotateY(180deg);
+//        transform: perspective(140px) rotateY(180deg);
+//        opacity: 0;
+//      }
+//}
+//
+//@keyframes sk-foldCubeAngle {
+//  0%, 10% {
+//    -webkit-transform: perspective(140px) rotateX(-180deg);
+//    transform: perspective(140px) rotateX(-180deg);
+//    opacity: 0;
+//  } 25%, 75% {
+//      -webkit-transform: perspective(140px) rotateX(0deg);
+//      transform: perspective(140px) rotateX(0deg);
+//      opacity: 1;
+//    } 90%, 100% {
+//        -webkit-transform: perspective(140px) rotateY(180deg);
+//        transform: perspective(140px) rotateY(180deg);
+//        opacity: 0;
+//      }
+//}
