@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import wawe from './images/wawe.png'
+import achi from './images/achi.png'
+import wind from './images/wind.png'
 
 class MainHeader extends Component {
     render() {
@@ -6,7 +9,7 @@ class MainHeader extends Component {
             <div>
                 <header>
                     <div className="headerNav">
-                        <h1><a href="/">chica</a></h1>
+                        <h1><a href="/">chico</a></h1>
                         <div className="nav">
                             <a href="/" className="createAccount">Create accaunt</a>
                             <a href="/" className="signIn">Sign in</a>
@@ -18,18 +21,24 @@ class MainHeader extends Component {
                         <p>- a carefully curated premium library, ranging from small intimate electronic musicto epic
                             orchestral trailer music.</p>
                         <a href="/" className="createAccountBtn">Create account</a>
-                        <a href="/" className="contactBtn">Contact sales</a>
+                        {/*<a href="/" className="contactBtn">Contact sales</a>*/}
                     </div>
                 </header>
                 <section className="topBlock">
                     <div className="col-md-4 colThree">
-                        <span><i className="fa fa-users" aria-hidden="true"></i></span>
+                       <span>
+                            <img src={wawe} alt="" />
+                        </span>
                     </div>
                     <div className="col-md-4 colThree">
-                        <span><i className="fa fa-cloud" aria-hidden="true"></i></span>
+                        <span>
+                            <img src={achi} alt="" />
+                        </span>
                     </div>
                     <div className="col-md-4 colThree">
-                        <span><i className="fa fa-camera-retro" aria-hidden="true"></i></span>
+                       <span>
+                            <img src={wind} alt="" />
+                        </span>
                     </div>
                 </section>
             </div>
