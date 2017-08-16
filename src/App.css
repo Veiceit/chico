@@ -38,12 +38,12 @@ header {
 }
 
 header .bannerTitleWrapper {
-  background: url(images/skyline.jpeg) no-repeat 50%;
+  background: url(images/top.jpg) no-repeat 50%;
   background-size: cover;
   clear: both;
-  min-height: 500px;
+  min-height: 560px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 150px;
   position: relative
 }
 
@@ -124,7 +124,7 @@ section {
 
 .colThree {
   min-height: 300px;
-  background-color: #5ea89e;
+  background-color: #75757D;
   text-align: center;
   color: #fff;
   font-size: 48px;
@@ -134,21 +134,71 @@ section {
 }
 
 .colThree:nth-child(2) {
-  background-color: #ff4500
+  background-color: #BFEAD3
 }
 
 .colThree:nth-child(3) {
-  background-color: #228b22
+  background-color: #5BB294
 }
 
 .grid-item, .grid-sizer {
-  width: 20%
+  width: 33.33333%
+}
+.filterVal {
+  display: none;
 }
 
 .grid-item--width2 {
   width: 40%
 }
 
+.footerPlayer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footerPlayer .controlBtn {
+  width: 70%;
+}
+.footerPlayer .serviceBtn {
+  width: 30%;
+}
+.footerPlayer .media-controls {
+  flex-direction: row;
+  background-color: #484848;
+  color: #ffffff;
+  padding: 10px 100px;
+}
+.footerPlayer input[type=range] {
+  background-color: transparent;
+}
+.footerPlayer .thumbn {
+  width: 100px;
+}
+.footerPlayer .thumbn img {
+  width: 100%;
+}
+#musicGallery .footerPlayer .serviceBtn a {
+  color: #ffffff;
+}
+#musicGallery .footerPlayer .serviceBtn a .fa {
+  padding-right: 0;
+}
+.footerPlayer .media-controls .media-control--play-pause {
+  width: 59px;
+  background: #ffffff;
+}
+.footerPlayer .media-controls .media-control--play-pause span {
+  color: #484848;
+}
+.footerPlayer .trackTitle {
+  padding-left: 10px;
+}
+.footerPlayer .trackTitle span {
+  font-size: 12px;
+  width: 100px;
+  display: block;
+}
 /* ======================================================== */
 
 #musicGallery .container {
@@ -156,6 +206,7 @@ section {
   margin-bottom: 16px;
   width: 100%;
   padding: 0 0 16px;
+  margin-bottom: 150px;
 }
 
 #musicGallery .masonry {
@@ -222,6 +273,53 @@ section {
   height: auto;
 }
 
+#sorts {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.btnWrapp {
+  width: 33.3333%;
+  text-align: center;
+}
+.btnWrapp span {
+  display: block;
+  font-family: TradeGothicLTStd-BdCn20;
+  font-size: 16px;
+}
+.btnWrapp .button {
+  display: block;
+  margin: 10px auto 15px auto;
+  padding: 5px;
+  width: 100%;
+  max-width: 120px;
+  font-family: Sanchez;
+  text-transform: capitalize;
+  background: none;
+  border: 1px solid #DFDFDF;
+  box-shadow: none;
+  font-size: 16px;
+  outline: none;
+  background-size: 470px;
+  transition: all, 0.5s;
+}
+.btnWrapp .button:hover {
+  background-color: #5ea89e;
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent);
+  background-size: 240px;
+  box-shadow: 0px 0px 6px 1px #dfdfdf;
+}
 /*====================== Player style ======================*/
 #pl {
   position: absolute;
@@ -706,11 +804,11 @@ input[type=range]::-webkit-slider-runnable-track {
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
-  height: 5px;
-  width: 5px;
+  height: 6px;
+  width: 6px;
   border-radius: 50%;
   background: #5ea89e;
-  margin-top: -1.5px;
+  margin-top: -2px;
 }
 
 input[type=range]:focus {
@@ -725,9 +823,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   border: none;
   background: #5ea89e;
   color: #ffffff;
-  width: 40px;
+  width: 55px;
   height: 40px;
   outline: none;
+  font-size: 20px;
+  text-align: center;
 }
 .media-controls {
   display: flex;
@@ -753,9 +853,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 .serviceBtn {
   width: 100%;
-  display: flex;
+  /*display: flex;*/
+  /*justify-content: center;*/
   padding: 10px 0;
-  justify-content: center;
+
 }
 #musicGallery .serviceBtn a {
   position: relative;
@@ -767,6 +868,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   outline: none;
   top: auto;
   right: auto;
+  float: right;
+  margin: 0 5px;
+}
+#musicGallery .serviceBtn a .fa{
+  padding-right: 10px;
 }
 /*=================== Player style end =========================*/
 
